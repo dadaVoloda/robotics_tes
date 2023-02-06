@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    &:last-child {
+      @media (max-width: 1400px) {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+
+    &:hover {
+      svg .icon-circle {
+        fill: var(--accent-hover);
+      }
+    }
+
+    svg {
+      display: block;
+
+      .icon-circle {
+        transition: var(--tr-time);
+      }
+    }
+  }
+}

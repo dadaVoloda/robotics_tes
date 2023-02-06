@@ -1,0 +1,80 @@
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: var(--main-color);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 135px;
+
+  @media (max-width: 1400px) {
+    padding: 0 92px;
+  }
+  @media (max-width: 1023px) {
+    padding: 0 99px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
+}
+
+.title {
+  font-size: 46px;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
+  @media (max-width: 1400px) {
+    font-size: 32px;
+  }
+  @media (max-width: 1023px) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  @media (max-width: 610px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.btn {
+  padding: 18.5px 57px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--accent-color);
+  border-radius: 40px;
+  text-align: center;
+  transition: var(--tr-time);
+
+  @media (max-width: 610px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: var(--accent-hover);
+  }
+  &:active {
+    background-color: var(--accent-color);
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
