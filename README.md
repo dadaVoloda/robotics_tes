@@ -1,5 +1,7 @@
 # Russian Robotics Test
 
+### [Link](https://robotics-test-uypk.vercel.app/) to app
+
 ## Project setup
 
 ```
